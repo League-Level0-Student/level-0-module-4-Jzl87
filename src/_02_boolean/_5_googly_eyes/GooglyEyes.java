@@ -45,16 +45,22 @@ public class GooglyEyes extends PApplet {
     @Override
     public void settings() {
         size(WIDTH, HEIGHT);
+        face.resize( WIDTH, HEIGHT);
     }
     
     @Override
     public void setup() {
-
+    	
+    	face = loadImage ("Seal.jpg");
+    	face.resize(WIDTH, HEIGHT);
+    	background(face);
     }
 
     @Override
     public void draw() {
-
+    	System.out.println(mouseX);
+    	System.out.println(mouseY);
+    	image(face, 800, 600);
     }
 
     static public void main(String[] args) {
