@@ -20,7 +20,8 @@ public class HideTheCreeper extends PApplet {
     public void setup() {
     	  PImage minecraft = loadImage("HEROBIRNE.jpg");     //in setup method
           minecraft.resize(width, height);          //in setup method
-          background(minecraft);          //in setup method
+          background(minecraft); 
+          //in setup method
           creeper=loadImage("CREEPERAWWWMANNNNN.png");   
           creeper.resize(10, 10);//in setup method
     }
